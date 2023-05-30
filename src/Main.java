@@ -19,9 +19,9 @@ public class Main {
         // Calcula os valores dos tributos
         Double primicia = Math.ceil(remuneracao / 30);
         Double dizimo = Math.ceil((remuneracao - primicia) / 10);
-        Double socorro = (remuneracao * 2) / 100;
-        Double gratidao = (remuneracao / 1000) + 1;
-        Double israel = remuneracao / 100;
+        Double socorro = Math.ceil((remuneracao * 2) / 100);
+        Double gratidao = Math.ceil(remuneracao / 1000);
+        Double israel = Math.ceil(remuneracao / 100);
 
         // Exibe os valores dos tributos
         System.out.println("Primicia: " + primicia);
